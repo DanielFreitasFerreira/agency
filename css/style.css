@@ -1,16 +1,117 @@
+#header-banner .title-container h1, #header-banner .title-container h2 {
+  text-shadow: 3px 2px #050505;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  background-color: #ff5200;
+  border-color: #ff5200;
+}
+.btn:hover {
+  background-color: transparent;
+}
+.btn--second {
+  background-color: #000;
+  border-color: #fff;
+}
+.btn--second:hover {
+  color: #ff5200;
+  border-color: #ff5200;
+}
+.btn--rounded {
+  margin-top: 1rem;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+#header-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/office.jpg");
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+}
+#header-banner .header-container {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  padding: 1.5rem 2rem;
+  margin: 0 auto;
+  max-width: 960px;
+  justify-content: space-between;
+  z-index: 10;
+}
+#header-banner .header-container .header-brand {
+  color: #fff;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+#header-banner .header-container .header-brand:hover {
+  color: #ff5200;
+  border-color: #ff5200;
+}
+#header-banner .header-container-navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#header-banner .header-container-navbar li {
+  margin: 5px 10px;
+}
+#header-banner .header-container-navbar li a {
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+#header-banner .header-container-navbar li a:hover {
+  color: #ff5200;
+  border-color: #ff5200;
+}
+#header-banner .header-container .fas.fa-bars {
+  display: none;
+}
+#header-banner .title-container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#header-banner .title-container h2 {
+  font-size: 3rem;
+}
+#header-banner .title-container h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato" sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 li {
   list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
