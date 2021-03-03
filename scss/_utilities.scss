@@ -19,6 +19,7 @@
     width: 100%;
     margin: 0 auto;
     background-color: $black;
+    z-index: 10;
 
     position: fixed;
     top: 0;
@@ -44,6 +45,25 @@
   font-size: $size-3r;
   margin-top: $mar-2r;
   text-align: center;
+}
+
+%center-bg {
+  background-size: cover;
+  background-position: center;
+}
+%card-hover {
+  .job-card-cover,
+  .job-card-title,
+  .job-card-description {
+    opacity: 0;
+  }
+  &:hover {
+    .job-card-cover,
+    .job-card-title,
+    .job-card-description {
+      opacity: 1;
+    }
+  }
 }
 // Buttons
 .btn {
