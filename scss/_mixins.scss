@@ -14,17 +14,6 @@
   li {
     list-style: none;
   }
-
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    background-color: $black;
-    z-index: 10;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
 }
 
 @mixin main-hover {
@@ -33,6 +22,23 @@
   &:hover {
     color: $primary-color;
     border-color: $primary-color;
+  }
+}
+
+// Mobile
+@mixin tablet {
+  @media (max-width: 765px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 560px) {
+    @content;
+  }
+}
+@mixin smart-small {
+  @media (max-width: 410px) {
+    @content;
   }
 }
 
@@ -89,7 +95,7 @@
     }
   }
   &--rounded {
-    margin-top: $mar-1r;
+    margin-top: $mar-3r;
     border-radius: $rounded-2r;
     padding: $pad-1r $size-1-5r;
   }

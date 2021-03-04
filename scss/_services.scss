@@ -3,6 +3,10 @@
   padding: $pad-2r;
   margin-bottom: $mar-2r;
 
+  // @include mobile {
+  //   padding:
+  // }
+
   h2 {
     @extend %section-title;
   }

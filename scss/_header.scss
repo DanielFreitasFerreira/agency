@@ -1,18 +1,33 @@
-#header-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/office.jpg");
-  height: 85vh;
-  background-size: cover;
-  background-position: center;
+#header {
+  background-color: $black;
+
+  width: 100%;
+
+  z-index: 10;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  nav {
+    @include tablet {
+      display: none;
+    }
+  }
 
   .header-container {
-    align-items: center;
-    background-color: $black;
-    display: flex;
-    padding: $pad-1-5r $pad-2r;
-    margin: 0 auto;
+    height: 100%;
     max-width: 960px;
-    justify-content: space-between;
+    margin: 0 auto;
+
+    .header-content {
+      margin: 0 auto;
+      display: flex;
+
+      padding: $pad-1r $pad-0-5;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     .header-brand {
       color: $light-color;
@@ -36,25 +51,14 @@
       }
     }
     .fas.fa-bars {
+      color: $light-color;
+      font-size: $size-1-5r;
+      padding-top: $pad-0-5;
       display: none;
-    }
-  }
-  .title-container {
-    color: $light-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 
-    h2 {
-      font-size: $size-3r;
-      @extend %title-text-shadow;
-    }
-    h1 {
-      font-size: $size-4r;
-      margin-top: $mar-1r;
-      @extend %title-text-shadow;
+      @include tablet {
+        display: block;
+      }
     }
   }
 }

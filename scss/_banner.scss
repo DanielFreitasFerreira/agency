@@ -1,0 +1,70 @@
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/office.jpg");
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+
+  @include tablet {
+    height: 75vh;
+  }
+
+  @include mobile {
+    height: 65vh;
+  }
+
+  @include smart-small {
+    height: 60vh;
+  }
+
+  .banner-container {
+    padding: 150px 0 150px 0;
+
+    .banner-content {
+      color: $light-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    @include tablet {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: $size-3r;
+      @extend %title-text-shadow;
+
+      @include tablet {
+        font-size: $size-2r;
+      }
+
+      @include mobile {
+        font-size: $size-1-7r;
+      }
+
+      @include smart-small {
+        font-size: $size-1-4r;
+      }
+    }
+    h1 {
+      font-size: $size-4r;
+      margin-top: $mar-1r;
+      @extend %title-text-shadow;
+
+      @include tablet {
+        font-size: $size-3r;
+      }
+
+      @include mobile {
+        font-size: $size-2r;
+      }
+
+      @include smart-small {
+        font-size: $size-1-5r;
+      }
+    }
+  }
+}
