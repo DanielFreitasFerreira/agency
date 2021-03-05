@@ -81,8 +81,9 @@
 }
 @media (max-width: 410px) {
   #header .header-container .header-content {
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: 100%;
   }
 }
 #header .header-container .header-brand {
@@ -132,16 +133,19 @@
 @media (max-width: 785px) {
   .banner {
     height: 75vh;
+    max-width: 100%;
   }
 }
 @media (max-width: 630px) {
   .banner {
     height: 65vh;
+    max-width: 100%;
   }
 }
 @media (max-width: 410px) {
   .banner {
     height: 60vh;
+    max-width: 100%;
   }
 }
 .banner .banner-container {
@@ -248,6 +252,11 @@
 .services-container .services-card-container .services-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 410px) {
+  .services-container .services-card-container .services-card h3 {
+    font-size: 1rem;
+  }
 }
 .services-container .services-card-container .services-card p {
   max-width: 400px;
@@ -433,21 +442,51 @@
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 410px) {
+  .footer .footer-container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
 .footer .footer-container .footer-title {
   color: #fff;
   font-weight: bold;
   margin-bottom: 1rem;
 }
+@media (max-width: 410px) {
+  .footer .footer-container .footer-title {
+    margin-top: 1rem;
+  }
+}
 .footer .footer-desc-container,
 .footer .footer-links-container {
   width: 50%;
+}
+@media (max-width: 410px) {
+  .footer .footer-desc-container,
+.footer .footer-links-container {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 }
 .footer .footer-desc-container p {
   width: 80%;
   line-height: 1.3rem;
 }
+@media (max-width: 410px) {
+  .footer .footer-desc-container p {
+    width: 100%;
+    text-align: center;
+  }
+}
 .footer .footer-links-container {
   display: flex;
+}
+@media (max-width: 410px) {
+  .footer .footer-links-container {
+    flex-direction: column;
+  }
 }
 .footer .footer-links-container-list {
   padding: 0 1rem;
@@ -465,6 +504,11 @@
 .footer .footer-copy-right-container {
   width: 100%;
   margin-top: 3rem;
+}
+@media (max-width: 410px) {
+  .footer .footer-copy-right-container {
+    text-align: center;
+  }
 }
 .footer .footer-copy-right-container p {
   margin-bottom: 1rem;

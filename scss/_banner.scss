@@ -7,14 +7,17 @@
 
   @include tablet {
     height: 75vh;
+    max-width: 100%;
   }
 
   @include mobile {
     height: 65vh;
+    max-width: 100%;
   }
 
   @include smart-small {
     height: 60vh;
+    max-width: 100%;
   }
 
   .banner-container {

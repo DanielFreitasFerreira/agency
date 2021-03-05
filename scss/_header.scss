@@ -29,8 +29,9 @@
       justify-content: space-between;
 
       @include smart-small {
-        padding-right: $pad-3r;
-        padding-left: $pad-3r;
+        padding-right: $pad-2r;
+        padding-left: $pad-2r;
+        max-width: 100%;
       }
     }
 

@@ -9,25 +9,49 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include smart-small {
+      max-width: 100%;
+      flex-direction: column;
+    }
+
     .footer-title {
       color: $light-color;
       font-weight: bold;
       margin-bottom: $mar-1r;
+
+      @include smart-small {
+        margin-top: $mar-1r;
+      }
     }
   }
   .footer-desc-container,
   .footer-links-container {
     width: 50%;
+
+    @include smart-small {
+      width: 100%;
+      margin-bottom: $mar-2r;
+      text-align: center;
+    }
   }
 
   .footer-desc-container {
     p {
       width: 80%;
       line-height: 1.3rem;
+
+      @include smart-small {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   .footer-links-container {
     display: flex;
+
+    @include smart-small {
+      flex-direction: column;
+    }
 
     &-list {
       padding: 0 $pad-1r;
@@ -49,6 +73,10 @@
   .footer-copy-right-container {
     width: 100%;
     margin-top: $mar-3r;
+
+    @include smart-small {
+      text-align: center;
+    }
 
     p {
       margin-bottom: $mar-1r;
