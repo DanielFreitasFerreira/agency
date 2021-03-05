@@ -4,10 +4,28 @@
 
   h2 {
     @extend %section-title;
+
+    @include smart-small {
+      font-size: 2rem;
+    }
+    @include mobile {
+      margin: 0;
+      font-size: 2rem;
+    }
   }
   .jobs-list {
     display: flex;
     padding: $pad-2r 0;
+
+    @include smart-small {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
 
     .first-job {
       width: 30%;
@@ -20,11 +38,32 @@
       transition: 0.5s;
       @extend %center-bg;
       @extend %card-hover;
+
+      @include smart-small {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        height: 200px;
+      }
+      @include mobile {
+        width: 68%;
+        height: 200px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+      }
     }
     .other-jobs-container {
       display: flex;
       flex-wrap: wrap;
       width: 68%;
+
+      @include smart-small {
+        width: 100%;
+        flex-direction: column;
+      }
+      @include mobile {
+        margin: 0 auto;
+      }
 
       .job-card {
         width: 46%;
@@ -35,6 +74,20 @@
         margin-bottom: 15px;
         @extend %center-bg;
         @extend %card-hover;
+
+        @include smart-small {
+          width: 100%;
+          height: 200px;
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
+
+        @include mobile {
+          width: 100%;
+          height: 200px;
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
       }
       #job2 {
         background-image: url("../img/job2.jpg");
@@ -76,12 +129,28 @@
       color: $light-color;
       padding: $pad-1r;
       font-size: $size-0-9r;
+
+      @include smart-small {
+        padding: 10px 0 0 0;
+        margin: 0;
+      }
+
+      @include mobile {
+        margin: 0;
+      }
     }
     .job-card-description {
       text-align: center;
       color: $light-color;
       padding: $pad-1r;
       font-size: $size-0-9r;
+
+      @include smart-small {
+        padding: 0;
+      }
+      @include mobile {
+        padding: 0;
+      }
     }
   }
 }
