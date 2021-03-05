@@ -27,6 +27,11 @@
       padding: $pad-1r $pad-0-5;
       align-items: center;
       justify-content: space-between;
+
+      @include smart-small {
+        padding-right: $pad-3r;
+        padding-left: $pad-3r;
+      }
     }
 
     .header-brand {

@@ -79,6 +79,12 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 410px) {
+  #header .header-container .header-content {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
 #header .header-container .header-brand {
   color: #fff;
   font-size: 2rem;
@@ -303,7 +309,7 @@
 }
 @media (max-width: 630px) {
   .jobs-container .jobs-list .first-job {
-    width: 68%;
+    width: 100%;
     height: 200px;
     margin: 0 auto;
     margin-bottom: 2rem;
